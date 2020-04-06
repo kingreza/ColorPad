@@ -18,6 +18,7 @@
 		8351DAAB243BCABE00282B75 /* SplitContainerElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8351DAAA243BCABE00282B75 /* SplitContainerElement.swift */; };
 		8351DAAD243BDC2400282B75 /* ColorPadRootScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8351DAAC243BDC2400282B75 /* ColorPadRootScreen.swift */; };
 		8351DAAF243BE7B800282B75 /* ColorDisplayElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8351DAAE243BE7B800282B75 /* ColorDisplayElement.swift */; };
+		8351DAB1243BED7300282B75 /* ColorPadPanelElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8351DAB0243BED7300282B75 /* ColorPadPanelElement.swift */; };
 		A10BB51749518A128612587E /* Pods_ColorPads.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1087258717C530387AF3D3F2 /* Pods_ColorPads.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +39,7 @@
 		8351DAAA243BCABE00282B75 /* SplitContainerElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitContainerElement.swift; sourceTree = "<group>"; };
 		8351DAAC243BDC2400282B75 /* ColorPadRootScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPadRootScreen.swift; sourceTree = "<group>"; };
 		8351DAAE243BE7B800282B75 /* ColorDisplayElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorDisplayElement.swift; sourceTree = "<group>"; };
+		8351DAB0243BED7300282B75 /* ColorPadPanelElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPadPanelElement.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 			children = (
 				8351DAAA243BCABE00282B75 /* SplitContainerElement.swift */,
 				8351DAAE243BE7B800282B75 /* ColorDisplayElement.swift */,
+				8351DAB0243BED7300282B75 /* ColorPadPanelElement.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 				8351DAA6243BC8B200282B75 /* ColorPadPanelWorkflow.swift in Sources */,
 				8302F7F0243BC129002BD515 /* SceneDelegate.swift in Sources */,
 				8351DAA8243BCA0000282B75 /* ColorPadDisplayWorkflow.swift in Sources */,
+				8351DAB1243BED7300282B75 /* ColorPadPanelElement.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

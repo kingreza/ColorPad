@@ -93,14 +93,14 @@ extension ColorPadRootWorkflow {
   
   func render(state: ColorPadRootWorkflow.State, context: RenderContext<ColorPadRootWorkflow>) -> Rendering {
     
-    let top = ColorPadDisplayWorkflow(
+    let topElement = ColorPadDisplayWorkflow(
       color: self.color
-    ).mapOutput({ (action) -> Action in
-      
-    }).mapRendering({$0}).rendered(with: context)
+    ).mapOutput({(action) -> Action in}).mapRendering({$0}).rendered(with: context)
+    
+    let bottomElement = ColorPadPanelWorkflow().mapOutput({(action) -> Action in}).rendered(with: context)
     
     return ColorPadRootScreen(
-      topElement: top,
-      bottomElement: nil)
+      topElement: topElement,
+      bottomElement: bottomElement)
   }
 }
