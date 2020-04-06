@@ -1,0 +1,46 @@
+PODS:
+  - BlueprintUI (0.8.0)
+  - BlueprintUICommonControls (0.8.0):
+    - BlueprintUI
+  - ReactiveSwift (6.0.0)
+  - Workflow (0.25.0):
+    - ReactiveSwift (~> 6.0.0)
+  - WorkflowUI (0.25.0):
+    - Workflow (= 0.25.0)
+
+DEPENDENCIES:
+  - BlueprintUI (from `https://github.com/square/Blueprint.git`)
+  - BlueprintUICommonControls (from `https://github.com/square/Blueprint.git`)
+  - Workflow
+  - WorkflowUI
+
+SPEC REPOS:
+  trunk:
+    - ReactiveSwift
+    - Workflow
+    - WorkflowUI
+
+EXTERNAL SOURCES:
+  BlueprintUI:
+    :git: https://github.com/square/Blueprint.git
+  BlueprintUICommonControls:
+    :git: https://github.com/square/Blueprint.git
+
+CHECKOUT OPTIONS:
+  BlueprintUI:
+    :commit: 16599002039854cc2e72f18d1d94fdfe766b9fba
+    :git: https://github.com/square/Blueprint.git
+  BlueprintUICommonControls:
+    :commit: 16599002039854cc2e72f18d1d94fdfe766b9fba
+    :git: https://github.com/square/Blueprint.git
+
+SPEC CHECKSUMS:
+  BlueprintUI: 364802bc87c148fcb3337e194884a5a4405a5113
+  BlueprintUICommonControls: ccff17ffd32d00351b0e9c421486a16f0eca3d47
+  ReactiveSwift: 24b7ed245617bbfd30ee0c87779b6c64ac1b4518
+  Workflow: 04ca404bd1dd1e76de9ade12c6d8d06d9ac076ef
+  WorkflowUI: ebe2d144cbf9bc7f269c1f9b4accba47e3e8057b
+
+PODFILE CHECKSUM: e350047cf61621068f13898a44cac1a03c948660
+
+COCOAPODS: 1.8.4
