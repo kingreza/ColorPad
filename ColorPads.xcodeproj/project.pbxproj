@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,12 @@
 		8302F7F2243BC129002BD515 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8302F7F1243BC129002BD515 /* ViewController.swift */; };
 		8302F7F7243BC12A002BD515 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8302F7F6243BC12A002BD515 /* Assets.xcassets */; };
 		8302F7FA243BC12A002BD515 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8302F7F8243BC12A002BD515 /* LaunchScreen.storyboard */; };
+		8351DAA4243BC89800282B75 /* ColorPadRootWorkflow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8351DAA3243BC89800282B75 /* ColorPadRootWorkflow.swift */; };
+		8351DAA6243BC8B200282B75 /* ColorPadPanelWorkflow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8351DAA5243BC8B200282B75 /* ColorPadPanelWorkflow.swift */; };
+		8351DAA8243BCA0000282B75 /* ColorPadDisplayWorkflow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8351DAA7243BCA0000282B75 /* ColorPadDisplayWorkflow.swift */; };
+		8351DAAB243BCABE00282B75 /* SplitContainerElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8351DAAA243BCABE00282B75 /* SplitContainerElement.swift */; };
+		8351DAAD243BDC2400282B75 /* ColorPadRootScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8351DAAC243BDC2400282B75 /* ColorPadRootScreen.swift */; };
+		8351DAAF243BE7B800282B75 /* ColorDisplayElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8351DAAE243BE7B800282B75 /* ColorDisplayElement.swift */; };
 		A10BB51749518A128612587E /* Pods_ColorPads.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1087258717C530387AF3D3F2 /* Pods_ColorPads.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +32,12 @@
 		8302F7F6243BC12A002BD515 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8302F7F9243BC12A002BD515 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8302F7FB243BC12A002BD515 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8351DAA3243BC89800282B75 /* ColorPadRootWorkflow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPadRootWorkflow.swift; sourceTree = "<group>"; };
+		8351DAA5243BC8B200282B75 /* ColorPadPanelWorkflow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPadPanelWorkflow.swift; sourceTree = "<group>"; };
+		8351DAA7243BCA0000282B75 /* ColorPadDisplayWorkflow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPadDisplayWorkflow.swift; sourceTree = "<group>"; };
+		8351DAAA243BCABE00282B75 /* SplitContainerElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitContainerElement.swift; sourceTree = "<group>"; };
+		8351DAAC243BDC2400282B75 /* ColorPadRootScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPadRootScreen.swift; sourceTree = "<group>"; };
+		8351DAAE243BE7B800282B75 /* ColorDisplayElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorDisplayElement.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +58,6 @@
 				24EE6AECFFADAC73901BD2C9 /* Pods-ColorPads.debug.xcconfig */,
 				00B6A719FB14DD9DB580D30A /* Pods-ColorPads.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -79,6 +90,9 @@
 		8302F7EC243BC129002BD515 /* ColorPads */ = {
 			isa = PBXGroup;
 			children = (
+				8351DAA9243BCA9F00282B75 /* UI */,
+				8351DAA0243BC83A00282B75 /* Screen */,
+				8351DA9B243BC7DC00282B75 /* Workflow */,
 				8302F7ED243BC129002BD515 /* AppDelegate.swift */,
 				8302F7EF243BC129002BD515 /* SceneDelegate.swift */,
 				8302F7F1243BC129002BD515 /* ViewController.swift */,
@@ -87,6 +101,33 @@
 				8302F7FB243BC12A002BD515 /* Info.plist */,
 			);
 			path = ColorPads;
+			sourceTree = "<group>";
+		};
+		8351DA9B243BC7DC00282B75 /* Workflow */ = {
+			isa = PBXGroup;
+			children = (
+				8351DAA3243BC89800282B75 /* ColorPadRootWorkflow.swift */,
+				8351DAA5243BC8B200282B75 /* ColorPadPanelWorkflow.swift */,
+				8351DAA7243BCA0000282B75 /* ColorPadDisplayWorkflow.swift */,
+			);
+			path = Workflow;
+			sourceTree = "<group>";
+		};
+		8351DAA0243BC83A00282B75 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				8351DAAC243BDC2400282B75 /* ColorPadRootScreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		8351DAA9243BCA9F00282B75 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				8351DAAA243BCABE00282B75 /* SplitContainerElement.swift */,
+				8351DAAE243BE7B800282B75 /* ColorDisplayElement.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,9 +244,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8351DAAB243BCABE00282B75 /* SplitContainerElement.swift in Sources */,
+				8351DAA4243BC89800282B75 /* ColorPadRootWorkflow.swift in Sources */,
 				8302F7F2243BC129002BD515 /* ViewController.swift in Sources */,
+				8351DAAF243BE7B800282B75 /* ColorDisplayElement.swift in Sources */,
+				8351DAAD243BDC2400282B75 /* ColorPadRootScreen.swift in Sources */,
 				8302F7EE243BC129002BD515 /* AppDelegate.swift in Sources */,
+				8351DAA6243BC8B200282B75 /* ColorPadPanelWorkflow.swift in Sources */,
 				8302F7F0243BC129002BD515 /* SceneDelegate.swift in Sources */,
+				8351DAA8243BCA0000282B75 /* ColorPadDisplayWorkflow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

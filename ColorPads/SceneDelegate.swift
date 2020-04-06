@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import WorkflowUI
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -22,7 +23,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     window = UIWindow(frame: UIScreen.main.bounds)
     window?.windowScene = scene
     
-    window?.rootViewController = ViewController()
+    window?.rootViewController = ContainerViewController(workflow: ColorPadRootWorkflow())
     window?.makeKeyAndVisible()
     
   }
