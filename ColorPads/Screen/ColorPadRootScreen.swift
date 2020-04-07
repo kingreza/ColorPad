@@ -35,11 +35,12 @@ final class ColorPadRootViewController: ScreenViewController<ColorPadRootScreen>
   required init(screen: ColorPadRootScreen, environment: ViewEnvironment) {
     super.init(screen: screen, environment: environment)
     update(with: screen, environment: environment)
+    self.blueprintView = generatedBlueprintView(with: screen)
   }
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    self.view = blueprintView
+    self.view = self.blueprintView
   }
   
   override func screenDidChange(from previousScreen: ColorPadRootScreen, previousEnvironment: ViewEnvironment) {
@@ -58,5 +59,7 @@ final class ColorPadRootViewController: ScreenViewController<ColorPadRootScreen>
   private func update(with screen: ColorPadRootScreen, environment: ViewEnvironment) {
     /// Update UI
     self.blueprintView = generatedBlueprintView(with: screen)
+    //TODO: understand why I need to do this to trigger a redraw
+    self.view = self.blueprintView
   }
 }

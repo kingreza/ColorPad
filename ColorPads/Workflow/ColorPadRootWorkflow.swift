@@ -14,12 +14,10 @@ import ReactiveSwift
 // MARK: Input and Output
 
 struct ColorPadRootWorkflow: Workflow {
-  
-  var color: Property<UIColor>
-  
+    
   init() {
-    self.color = Property(value: .brown)
   }
+  
   enum Output {
     
   }
@@ -31,15 +29,14 @@ struct ColorPadRootWorkflow: Workflow {
 extension ColorPadRootWorkflow {
   
   struct State {
-    
+    var color: UIColor
   }
   
   func makeInitialState() -> ColorPadRootWorkflow.State {
-    return State()
+    return State(color: .brown)
   }
   
   func workflowDidChange(from previousWorkflow: ColorPadRootWorkflow, state: inout State) {
-    
   }
 }
 
@@ -50,40 +47,20 @@ extension ColorPadRootWorkflow {
   
   enum Action: WorkflowAction {
     
+    case colorChanged(UIColor)
+    
     typealias WorkflowType = ColorPadRootWorkflow
     
     func apply(toState state: inout ColorPadRootWorkflow.State) -> ColorPadRootWorkflow.Output? {
-      
       switch self {
-        // Update state and produce an optional output based on which action was received.
+       case .colorChanged(let color):
+        state.color = color
       }
-      
+      return nil
     }
   }
 }
 
-
-// MARK: Workers
-
-extension ColorPadRootWorkflow {
-  
-  struct ColoPadRootWorker: Worker {
-    
-    enum Output {
-      
-    }
-    
-    func run() -> SignalProducer<Output, Never> {
-      fatalError()
-    }
-    
-    func isEquivalent(to otherWorker: ColoPadRootWorker) -> Bool {
-      return true
-    }
-    
-  }
-  
-}
 
 // MARK: Rendering
 
@@ -94,10 +71,17 @@ extension ColorPadRootWorkflow {
   func render(state: ColorPadRootWorkflow.State, context: RenderContext<ColorPadRootWorkflow>) -> Rendering {
     
     let topElement = ColorPadDisplayWorkflow(
-      color: self.color
+      color: state.color
     ).mapOutput({(action) -> Action in}).mapRendering({$0}).rendered(with: context)
     
-    let bottomElement = ColorPadPanelWorkflow().mapOutput({(action) -> Action in}).rendered(with: context)
+    let bottomElement = ColorPadPanelWorkflow()
+      .mapOutput({(output) -> Action in
+        switch output {
+        case .colorChanged(let newColor):
+          return .colorChanged(newColor)
+        }
+      }
+    ).rendered(with: context)
     
     return ColorPadRootScreen(
       topElement: topElement,

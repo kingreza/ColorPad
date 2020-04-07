@@ -16,7 +16,7 @@ import ReactiveSwift
 struct ColorPadPanelWorkflow: Workflow {
   
   enum Output {
-    
+    case colorChanged(UIColor)
   }
 }
 
@@ -45,14 +45,16 @@ extension ColorPadPanelWorkflow {
   
   enum Action: WorkflowAction {
     
+    case colorChanged(UIColor)
     typealias WorkflowType = ColorPadPanelWorkflow
     
     func apply(toState state: inout ColorPadPanelWorkflow.State) -> ColorPadPanelWorkflow.Output? {
       
       switch self {
         // Update state and produce an optional output based on which action was received.
+      case .colorChanged(let color):
+        return .colorChanged(color)
       }
-      
     }
   }
 }
@@ -85,6 +87,8 @@ extension ColorPadPanelWorkflow {
 extension ColorPadPanelWorkflow {
   typealias Rendering = ColorPadPanelElement
   func render(state: ColorPadPanelWorkflow.State, context: RenderContext<ColorPadPanelWorkflow>) -> Rendering {
+    let sink = context.makeSink(of: Action.self)
+    
     return ColorPadPanelElement(
       colors: [
         .red,
@@ -93,7 +97,11 @@ extension ColorPadPanelWorkflow {
         .green,
         .magenta,
         .orange,
-      ]
+      ], onColorChanged: {color in
+        sink.send(
+          .colorChanged(color)
+        )
+      }
     )
   }
 }

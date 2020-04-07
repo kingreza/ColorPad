@@ -15,9 +15,9 @@ import ReactiveSwift
 
 struct ColorPadDisplayWorkflow: Workflow {
   
-  var color: Property<UIColor>
+  var color: UIColor
   
-  init(color: Property<UIColor>) {
+  init(color: UIColor) {
     self.color = color
   }
   
@@ -81,9 +81,7 @@ extension ColorPadDisplayWorkflow {
     func isEquivalent(to otherWorker: ColorPadDisplayWorker) -> Bool {
       return true
     }
-    
   }
-  
 }
 
 // MARK: Rendering
@@ -92,6 +90,6 @@ extension ColorPadDisplayWorkflow {
   
   typealias Rendering = ColorDisplayElement
   func render(state: ColorPadDisplayWorkflow.State, context: RenderContext<ColorPadDisplayWorkflow>) -> Rendering {
-    return ColorDisplayElement(color: self.color.value)
+    return ColorDisplayElement(color: self.color)
   }
 }
