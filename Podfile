@@ -12,3 +12,8 @@ target 'ColorPads' do
   pod 'BlueprintUICommonControls',git: 'https://github.com/square/Blueprint.git'
   pod 'SwiftLint'
 end
+
+target 'ColorPadsTests' do
+  use_frameworks!
+  pod 'WorkflowTesting'
+end

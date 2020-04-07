@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		56D2FD39ACDEB107A74A7036 /* Pods_ColorPadsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5133B23D86FEA1E37CC1CC0 /* Pods_ColorPadsTests.framework */; };
 		8302F7EE243BC129002BD515 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8302F7ED243BC129002BD515 /* AppDelegate.swift */; };
 		8302F7F0243BC129002BD515 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8302F7EF243BC129002BD515 /* SceneDelegate.swift */; };
 		8302F7F2243BC129002BD515 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8302F7F1243BC129002BD515 /* ViewController.swift */; };
@@ -19,13 +20,25 @@
 		8351DAAD243BDC2400282B75 /* ColorPadRootScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8351DAAC243BDC2400282B75 /* ColorPadRootScreen.swift */; };
 		8351DAAF243BE7B800282B75 /* ColorDisplayElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8351DAAE243BE7B800282B75 /* ColorDisplayElement.swift */; };
 		8351DAB1243BED7300282B75 /* ColorPadPanelElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8351DAB0243BED7300282B75 /* ColorPadPanelElement.swift */; };
+		83DF4259243C0941007CC829 /* ColorPadsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DF4258243C0941007CC829 /* ColorPadsTests.swift */; };
 		A10BB51749518A128612587E /* Pods_ColorPads.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1087258717C530387AF3D3F2 /* Pods_ColorPads.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		83DF425B243C0941007CC829 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8302F7E2243BC129002BD515 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8302F7E9243BC129002BD515;
+			remoteInfo = ColorPads;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		00B6A719FB14DD9DB580D30A /* Pods-ColorPads.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ColorPads.release.xcconfig"; path = "Target Support Files/Pods-ColorPads/Pods-ColorPads.release.xcconfig"; sourceTree = "<group>"; };
 		1087258717C530387AF3D3F2 /* Pods_ColorPads.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ColorPads.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		24EE6AECFFADAC73901BD2C9 /* Pods-ColorPads.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ColorPads.debug.xcconfig"; path = "Target Support Files/Pods-ColorPads/Pods-ColorPads.debug.xcconfig"; sourceTree = "<group>"; };
+		6D6B9D7AF70922904861C4E3 /* Pods-ColorPadsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ColorPadsTests.release.xcconfig"; path = "Target Support Files/Pods-ColorPadsTests/Pods-ColorPadsTests.release.xcconfig"; sourceTree = "<group>"; };
 		8302F7EA243BC129002BD515 /* ColorPads.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorPads.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8302F7ED243BC129002BD515 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8302F7EF243BC129002BD515 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +53,11 @@
 		8351DAAC243BDC2400282B75 /* ColorPadRootScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPadRootScreen.swift; sourceTree = "<group>"; };
 		8351DAAE243BE7B800282B75 /* ColorDisplayElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorDisplayElement.swift; sourceTree = "<group>"; };
 		8351DAB0243BED7300282B75 /* ColorPadPanelElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPadPanelElement.swift; sourceTree = "<group>"; };
+		83DF4256243C0941007CC829 /* ColorPadsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColorPadsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		83DF4258243C0941007CC829 /* ColorPadsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPadsTests.swift; sourceTree = "<group>"; };
+		83DF425A243C0941007CC829 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5133B23D86FEA1E37CC1CC0 /* Pods_ColorPadsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ColorPadsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE714FB129A237747D163421 /* Pods-ColorPadsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ColorPadsTests.debug.xcconfig"; path = "Target Support Files/Pods-ColorPadsTests/Pods-ColorPadsTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +69,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		83DF4253243C0941007CC829 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56D2FD39ACDEB107A74A7036 /* Pods_ColorPadsTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -59,6 +85,8 @@
 			children = (
 				24EE6AECFFADAC73901BD2C9 /* Pods-ColorPads.debug.xcconfig */,
 				00B6A719FB14DD9DB580D30A /* Pods-ColorPads.release.xcconfig */,
+				EE714FB129A237747D163421 /* Pods-ColorPadsTests.debug.xcconfig */,
+				6D6B9D7AF70922904861C4E3 /* Pods-ColorPadsTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -67,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				1087258717C530387AF3D3F2 /* Pods_ColorPads.framework */,
+				B5133B23D86FEA1E37CC1CC0 /* Pods_ColorPadsTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -75,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				8302F7EC243BC129002BD515 /* ColorPads */,
+				83DF4257243C0941007CC829 /* ColorPadsTests */,
 				8302F7EB243BC129002BD515 /* Products */,
 				47225CF7CA0B0D3DEE1A0D82 /* Pods */,
 				640804F4FE7AB1C755A65F32 /* Frameworks */,
@@ -85,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				8302F7EA243BC129002BD515 /* ColorPads.app */,
+				83DF4256243C0941007CC829 /* ColorPadsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -133,6 +164,15 @@
 			path = UI;
 			sourceTree = "<group>";
 		};
+		83DF4257243C0941007CC829 /* ColorPadsTests */ = {
+			isa = PBXGroup;
+			children = (
+				83DF4258243C0941007CC829 /* ColorPadsTests.swift */,
+				83DF425A243C0941007CC829 /* Info.plist */,
+			);
+			path = ColorPadsTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -156,6 +196,26 @@
 			productReference = 8302F7EA243BC129002BD515 /* ColorPads.app */;
 			productType = "com.apple.product-type.application";
 		};
+		83DF4255243C0941007CC829 /* ColorPadsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83DF425F243C0941007CC829 /* Build configuration list for PBXNativeTarget "ColorPadsTests" */;
+			buildPhases = (
+				645D8F78D6E07914843AD7D7 /* [CP] Check Pods Manifest.lock */,
+				83DF4252243C0941007CC829 /* Sources */,
+				83DF4253243C0941007CC829 /* Frameworks */,
+				83DF4254243C0941007CC829 /* Resources */,
+				42EE3C70C48B32AEDD6FEFF0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				83DF425C243C0941007CC829 /* PBXTargetDependency */,
+			);
+			name = ColorPadsTests;
+			productName = ColorPadsTests;
+			productReference = 83DF4256243C0941007CC829 /* ColorPadsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -168,6 +228,10 @@
 				TargetAttributes = {
 					8302F7E9243BC129002BD515 = {
 						CreatedOnToolsVersion = 11.4;
+					};
+					83DF4255243C0941007CC829 = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = 8302F7E9243BC129002BD515;
 					};
 				};
 			};
@@ -185,6 +249,7 @@
 			projectRoot = "";
 			targets = (
 				8302F7E9243BC129002BD515 /* ColorPads */,
+				83DF4255243C0941007CC829 /* ColorPadsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -196,6 +261,13 @@
 			files = (
 				8302F7FA243BC12A002BD515 /* LaunchScreen.storyboard in Resources */,
 				8302F7F7243BC12A002BD515 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83DF4254243C0941007CC829 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,6 +289,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ColorPads/Pods-ColorPads-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		42EE3C70C48B32AEDD6FEFF0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ColorPadsTests/Pods-ColorPadsTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ColorPadsTests/Pods-ColorPadsTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ColorPadsTests/Pods-ColorPadsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		645D8F78D6E07914843AD7D7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ColorPadsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		71F60FACB985E45EB4E428EC /* [CP] Check Pods Manifest.lock */ = {
@@ -279,7 +390,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		83DF4252243C0941007CC829 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83DF4259243C0941007CC829 /* ColorPadsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		83DF425C243C0941007CC829 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8302F7E9243BC129002BD515 /* ColorPads */;
+			targetProxy = 83DF425B243C0941007CC829 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		8302F7F8243BC12A002BD515 /* LaunchScreen.storyboard */ = {
@@ -445,6 +572,48 @@
 			};
 			name = Release;
 		};
+		83DF425D243C0941007CC829 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE714FB129A237747D163421 /* Pods-ColorPadsTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6TT3UB3CZS;
+				INFOPLIST_FILE = ColorPadsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.reza.shirazian.ColorPadsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ColorPads.app/ColorPads";
+			};
+			name = Debug;
+		};
+		83DF425E243C0941007CC829 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D6B9D7AF70922904861C4E3 /* Pods-ColorPadsTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6TT3UB3CZS;
+				INFOPLIST_FILE = ColorPadsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.reza.shirazian.ColorPadsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ColorPads.app/ColorPads";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -462,6 +631,15 @@
 			buildConfigurations = (
 				8302F7FF243BC12A002BD515 /* Debug */,
 				8302F800243BC12A002BD515 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83DF425F243C0941007CC829 /* Build configuration list for PBXNativeTarget "ColorPadsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83DF425D243C0941007CC829 /* Debug */,
+				83DF425E243C0941007CC829 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
