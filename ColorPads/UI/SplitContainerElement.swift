@@ -12,12 +12,12 @@ import BlueprintUICommonControls
 struct SplitContainerElement: ProxyElement {
   var topElement: Element?
   var bottomElement: Element?
-  
+
   var elementRepresentation: Element {
     return Box(
       backgroundColor: .red,
       cornerStyle: .square,
-      wrapping:Column { column in
+      wrapping: Column { column in
         column.horizontalAlignment = .fill
         column.verticalUnderflow = .growUniformly
         column.add(

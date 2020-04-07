@@ -10,4 +10,5 @@ target 'ColorPads' do
   pod 'WorkflowUI'
   pod 'BlueprintUI', git: 'https://github.com/square/Blueprint.git'
   pod 'BlueprintUICommonControls',git: 'https://github.com/square/Blueprint.git'
+  pod 'SwiftLint'
 end

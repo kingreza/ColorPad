@@ -10,11 +10,10 @@ import BlueprintUI
 import BlueprintUICommonControls
 
 struct ColorDisplayElement: ProxyElement {
-  
+
   var color: UIColor
-  
+
   var elementRepresentation: Element {
     return Box(backgroundColor: color)
   }
 }
-

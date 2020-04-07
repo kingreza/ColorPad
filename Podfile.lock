@@ -3,6 +3,7 @@ PODS:
   - BlueprintUICommonControls (0.8.0):
     - BlueprintUI
   - ReactiveSwift (6.0.0)
+  - SwiftLint (0.39.2)
   - Workflow (0.25.0):
     - ReactiveSwift (~> 6.0.0)
   - WorkflowUI (0.25.0):
@@ -11,12 +12,14 @@ PODS:
 DEPENDENCIES:
   - BlueprintUI (from `https://github.com/square/Blueprint.git`)
   - BlueprintUICommonControls (from `https://github.com/square/Blueprint.git`)
+  - SwiftLint
   - Workflow
   - WorkflowUI
 
 SPEC REPOS:
   trunk:
     - ReactiveSwift
+    - SwiftLint
     - Workflow
     - WorkflowUI
 
@@ -38,9 +41,10 @@ SPEC CHECKSUMS:
   BlueprintUI: 364802bc87c148fcb3337e194884a5a4405a5113
   BlueprintUICommonControls: ccff17ffd32d00351b0e9c421486a16f0eca3d47
   ReactiveSwift: 24b7ed245617bbfd30ee0c87779b6c64ac1b4518
+  SwiftLint: 22ccbbe3b8008684be5955693bab135e0ed6a447
   Workflow: 04ca404bd1dd1e76de9ade12c6d8d06d9ac076ef
   WorkflowUI: ebe2d144cbf9bc7f269c1f9b4accba47e3e8057b
 
-PODFILE CHECKSUM: e350047cf61621068f13898a44cac1a03c948660
+PODFILE CHECKSUM: c85d70aaf34462ff5031038a94c1bb1a9109c6b5
 
 COCOAPODS: 1.8.4

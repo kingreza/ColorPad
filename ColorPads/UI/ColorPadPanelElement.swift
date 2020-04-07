@@ -12,14 +12,14 @@ import BlueprintUICommonControls
 struct ColorPadPanelElement: ProxyElement {
   let colors: [UIColor]
   let onColorChanged: (UIColor) -> Void
-  
+
   var elementRepresentation: Element {
     guard colors.count <= 10 else {
       fatalError("Too many colors")
     }
-    
+
     let itemsPerRow = colors.count / 2
-    
+
     return Column { column in
       column.verticalUnderflow = .growUniformly
       column.horizontalAlignment = .fill
@@ -34,14 +34,14 @@ struct ColorPadPanelElement: ProxyElement {
                   self.onColorChanged(self.colors[index])
                 },
                 wrapping: Box(
-                  backgroundColor:colors[index]
+                  backgroundColor: colors[index]
                 )
               )
             )
           }
         }
       )
-     
+
       column.add(
         child: Row { row in
           row.horizontalUnderflow = .growUniformly
@@ -53,7 +53,7 @@ struct ColorPadPanelElement: ProxyElement {
                   self.onColorChanged(self.colors[index])
                 },
                 wrapping: Box(
-                  backgroundColor:colors[index]
+                  backgroundColor: colors[index]
                 )
               )
             )
